@@ -1,0 +1,4 @@
+{"sessionId":"ea1392","runId":"post-fix","hypothesisId":"H1","location":"PatientLoader.java","message":"PatientLoader.run:entry","data":{existingCount:0},"timestamp":1781729862745}
+{"sessionId":"ea1392","runId":"post-fix","hypothesisId":"H2","location":"PatientLoader.java","message":"PatientLoader.run:resource","data":{exists:true, path:data/patients.csv},"timestamp":1781729862748}
+{"sessionId":"ea1392","runId":"post-fix","hypothesisId":"H3","location":"PatientLoader.java","message":"PatientLoader.run:csvParsed","data":{csvReaderClass:com.opencsv.CSVReader, rowCount:72},"timestamp":1781729862756}
+{"sessionId":"ea1392","runId":"post-fix","hypothesisId":"H4","location":"PatientLoader.java","message":"PatientLoader.run:loaded","data":{patientsLoaded:71, dbCount:71},"timestamp":1781729862784}
