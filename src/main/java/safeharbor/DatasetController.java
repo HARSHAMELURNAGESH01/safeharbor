@@ -1,6 +1,7 @@
 package safeharbor;
 
 import java.util.List;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -19,6 +20,7 @@ public class DatasetController {
     }
 
     @PostMapping
+    @PreAuthorize("hasRole('ADMIN')")
     public Dataset create(@RequestBody Dataset dataset) {
         return repository.save(dataset);
     }
