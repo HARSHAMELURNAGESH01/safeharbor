@@ -106,8 +106,32 @@ Open **http://localhost:5173** in your browser.
 
 ## Screenshots
 
-> Add screenshots to a `docs/` folder when ready.
+### Login
+
+Sign in with demo credentials (`researcher` / `password123` or `admin` / `admin123`).
 
 ![Login screen](docs/login.png)
 
-![Dashboard](docs/dashboard.png)
+### Researcher dashboard
+
+Researchers see the dataset catalog and de-identified patient records only—no raw PHI toggle or audit log.
+
+![Researcher dashboard](docs/researcher-dashboard.png)
+
+### Admin dashboard
+
+Admins see the same datasets and de-identified patients, plus controls to reveal raw PHI and view the audit log.
+
+![Admin dashboard](docs/admin-dashboard.png)
+
+### Audit log
+
+Every patient data read is recorded with username, action, resource, and timestamp.
+
+![Audit log](docs/audit-log.png)
+
+### Raw PHI view
+
+Admins can toggle **Reveal raw PHI** to view full patient records. A warning banner is shown and access is logged.
+
+![Raw PHI view](docs/raw-phi.png)
