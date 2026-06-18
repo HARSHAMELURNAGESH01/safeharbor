@@ -110,7 +110,7 @@ Open **http://localhost:5173** in your browser.
 
 Clean sign-in form with no credentials displayed on screen. Demo accounts are listed in [Getting Started](#getting-started) above.
 
-![Login screen](docs/login.png)
+![Login screen](docs/login-screen.png)
 
 ### Researcher dashboard
 
