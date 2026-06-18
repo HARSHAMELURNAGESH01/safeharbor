@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background: #f4f6f9; color: #1f2937; }
+
+.auth-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.card { background: #fff; padding: 40px; border-radius: 14px; box-shadow: 0 10px 40px rgba(0,0,0,.08); width: 340px; text-align: center; }
+.card h1 { margin: 0; color: #1f3864; }
+.subtitle { color: #6b7280; margin: 4px 0 24px; font-size: 14px; }
+.card input { width: 100%; padding: 12px; margin: 6px 0; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; }
+button { background: #1f3864; color: #fff; border: 0; padding: 12px 18px; border-radius: 8px; font-size: 14px; cursor: pointer; }
+button:hover { background: #16284a; }
+.card button { width: 100%; margin-top: 10px; }
+.error { color: #b91c1c; font-size: 13px; }
+.hint { color: #9ca3af; font-size: 12px; margin-top: 16px; }
+
+.dash { max-width: 900px; margin: 0 auto; padding: 24px; }
+.dash header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.dash h1 { margin: 0; color: #1f3864; }
+.role { color: #6b7280; font-size: 13px; }
+.ghost { background: transparent; color: #1f3864; border: 1px solid #1f3864; }
+.ghost:hover { background: #eef2f8; }
+
+section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 16px rgba(0,0,0,.05); }
+section h2 { margin-top: 0; color: #1f2937; }
+.count { color: #9ca3af; font-weight: normal; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #f0f0f0; }
+th { color: #6b7280; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+.tag { padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.tag.PUBLIC { background: #dcfce7; color: #166534; }
+.tag.RESTRICTED { background: #fef9c3; color: #854d0e; }
+.tag.CONTROLLED { background: #fee2e2; color: #991b1b; }
+.warn { color: #b45309; font-size: 13px; background: #fffbeb; padding: 8px 12px; border-radius: 8px; }

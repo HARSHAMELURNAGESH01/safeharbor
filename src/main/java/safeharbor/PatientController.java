@@ -1,6 +1,7 @@
 package safeharbor;
 
 import java.util.List;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -8,13 +9,29 @@ import org.springframework.web.bind.annotation.*;
 public class PatientController {
 
     private final PatientRepository repository;
+    private final DeidentificationService deidentifier;
+    private final AuditService audit;
 
-    public PatientController(PatientRepository repository) {
+    public PatientController(PatientRepository repository,
+                             DeidentificationService deidentifier,
+                             AuditService audit) {
         this.repository = repository;
+        this.deidentifier = deidentifier;
+        this.audit = audit;
     }
 
     @GetMapping
-    public List<Patient> getAll() {
+    @PreAuthorize("hasRole('ADMIN')")
+    public List<Patient> getAllRaw() {
+        audit.record("READ_RAW_PHI", "all patients");
         return repository.findAll();
+    }
+
+    @GetMapping("/deidentified")
+    public List<DeidentifiedPatient> getDeidentified() {
+        audit.record("READ_DEIDENTIFIED", "all patients");
+        return repository.findAll().stream()
+                .map(deidentifier::deidentify)
+                .toList();
     }
 }
