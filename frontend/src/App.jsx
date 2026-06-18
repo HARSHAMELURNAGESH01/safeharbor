@@ -98,16 +98,6 @@ function Login({ onLogin }) {
         </form>
 
         {error && <p className="error-msg">{error}</p>}
-
-        <div className="demo-hint">
-          <p className="demo-title">Demo accounts</p>
-          <p>
-            <strong>researcher</strong> / password123
-          </p>
-          <p>
-            <strong>admin</strong> / admin123
-          </p>
-        </div>
       </div>
     </div>
   );

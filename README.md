@@ -108,7 +108,7 @@ Open **http://localhost:5173** in your browser.
 
 ### Login
 
-Sign in with demo credentials (`researcher` / `password123` or `admin` / `admin123`).
+Clean sign-in form with no credentials displayed on screen. Demo accounts are listed in [Getting Started](#getting-started) above.
 
 ![Login screen](docs/login.png)
 

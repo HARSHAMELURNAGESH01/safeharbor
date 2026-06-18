@@ -130,34 +130,6 @@ body {
   text-align: center;
 }
 
-.demo-hint {
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid #e2e8f0;
-  text-align: center;
-  font-size: 13px;
-  color: #64748b;
-}
-
-.demo-hint p {
-  margin: 4px 0;
-}
-
-.demo-title {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #94a3b8;
-  margin-bottom: 8px !important;
-}
-
-.demo-hint strong {
-  color: #1f3864;
-  font-family: ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 12px;
-}
-
 /* ── Dashboard layout ─────────────────────────────────────── */
 .dashboard {
   min-height: 100vh;
